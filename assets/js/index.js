@@ -43,7 +43,7 @@ const propiedades_venta= [
       smoke: false,
       pet: false
   }
-]
+];
 
 const propiedades_alquiler = [
   {
@@ -90,7 +90,7 @@ const propiedades_alquiler = [
       smoke: false,
       pet: true
   },
-]
+];
 
 function cardGenerator(property) {
     const card = `
@@ -130,9 +130,9 @@ function cardGenerator(property) {
 };
 
 for (property of propiedades_venta.slice(0, 3)) {
-    document.getElementById("propiedades_venta").innerHTML += cardGenerator(property);
-}
+    document.getElementById("propiedades_venta_container").innerHTML += cardGenerator(property);
+};
 
 for (property of propiedades_alquiler.slice(0, 3)) {
-    document.getElementById("propiedades_alquiler").innerHTML += cardGenerator(property);
-}
+    document.getElementById("propiedades_alquiler_container").innerHTML += cardGenerator(property);
+};
